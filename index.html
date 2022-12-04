@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            *{background-color: yellow;}
+            *{
+                box-sizing:border-box;
+            }
+            input[type="text"], input[type="password"]
+            {
+                width:100%;
+                font-size:20px;
+                padding:10px;
+                margin: 5px 0px 20px;
+                border:none;
+                background:#f1f2f3;
+            }
+            label{
+                font-size:18px;
+            }
+            hr{
+                border: 2px solid black;
+                margin-bottom: 20px;
+            }
+            button{
+                font-size:18px;
+                font-weight: bold;
+                background-color: rgb(15,120,15);
+                color: white;
+                padding: 14px 0px;
+                cursor: pointer;
+                border: none;
+                margin: 10px 0px;
+                opacity:0.6;
+                width:100%;
+            }
+            .cancel{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+    <form> 
+       <div>
+           <h1>Sign up form</h1>
+           <hr>
+           <label><b>Email</b></label>
+           <input type="text" placeholder = "Enter your email">
+           <label><b>password</b></label>
+           <input type="password" placeholder="Enter password">
+           <label><b>enter</b></label>
+           <input type="password" placeholder="Re-enter password">
+           <label><input type="checkbox" checked="checked">Remember me </label>
+           <p>I accept the T&C attached<a herf="#"> Terms&Conditions</a></p>
+           </div>
+           <!--second divison below for buttons-->
+           <button type="button">sign up</button>
+           <button class="cancel" type="button">cancel</button>
+           <div>
+           </form>
+   </body>
+</html>

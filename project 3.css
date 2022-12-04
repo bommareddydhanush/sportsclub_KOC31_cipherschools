@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(231, 82, 48, 0.7),rgba(4,9,30,0.7)),url(background\ fix.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    word-spacing: 40px;
+
+}
+nav img{
+    width: 120px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+
+}
+.nav-links ul li a{
+    color: rgb(69, 85, 186);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+    width: 90%;
+    color: rgb(246, 246, 246);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 70px;
+    transition: 0.5s;
+}
+.text-box h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.text-box p{
+    font-size: 25px;
+    color: rgba(181, 175, 171, 0.705);
+    margin: 10px 0 40px;
+
+}
+.visit{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(13, 5, 239);
+    border: 3px solid rgb(164, 155, 155);
+    padding: 12px 34px;
+    font-size: 20px;
+    font-weight: 600;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.visit:hover{
+    border: 3px solid #f1eeee;
+    background: #110c0c;
+    transition: 1s;
+
+}
+/*------course--------*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    color: #f44336;
+    transition: 0.5s;
+    font-size: 30px;
+    font-weight: 550;
+
+}
+.course p{
+    color: rgb(12, 11, 11);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;  
+}
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-column1 h2{
+    color: rgb(234, 237, 234);
+}
+.course-column1{
+    flex-basis: 33%;
+    background: #2cbde5;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 20px 12px;
+    box-sizing: border-box;
+
+}
+.course-column1:hover{
+    box-shadow:  0 0 20px 0px rgb(224, 38, 38);
+}
+/*-----club resources----*/
+.club{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.column2{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.column2 img{
+    width: 100%;
+    display: block;
+}
+.row2{
+    padding-bottom: 40px;
+}
+.club h1{
+    color: #f44336;
+    font-size: 30px;
+    font-weight: 550;
+    padding-bottom: 10px;
+}
+.club p{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(10, 14, 14);
+    padding-bottom: 40px;
+
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgb(32, 230, 95,0.2);
+    bottom: 49%;
+    opacity: 1;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 550;
+    color: rgb(3, 5, 5);
+    font-size: 36px;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+/*-----facilities-----*/
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.column3{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.column3 img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+.column3 p{
+    padding: 0;
+}
+.column3 h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+/*-----call to action------*/
+.call{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(background\ fix.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.call h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    transition: 0s;
+    margin: auto;
+    border-radius: 3px;
+
+
+}
+.footer h1{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+/*-----about----*/
+.about{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(background\ fix.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+.about h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-column{
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+.about-column img{
+    width: 100%;
+}
+.about-column p{
+    padding: 15px 0 25px;
+}
+.contct-us{
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div p{
+    padding: 0px;
+
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: rgb(15, 6, 6);
+    font-weight: 400;
+}
+.contact-col div h5 p{
+    font-size: 15px;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid red;
+}
